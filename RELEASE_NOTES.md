@@ -4,6 +4,8 @@
 
 This release packages the current HAORENDER-AI preview as a Windows Qt desktop application. The executable target is still named `HaoRender-GI.exe` for this preview.
 
+The project is released under the MIT License.
+
 ### Highlights
 
 - Added LookDev AI workflow for prompt-driven Phong/Toon/PBR parameter generation.

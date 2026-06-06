@@ -59,3 +59,7 @@ build\Release\HaoRigBatchTest.exe --target "F:\AIGril\Resources\AiGril.glb" --so
 ```
 
 Recent large local checks covered MAXIMO/SHE and harvested Mixamo-style motions. See `RELEASE_NOTES.md` for the current results and known limitations.
+
+## License
+
+HAORENDER-AI is open source under the MIT License. See `LICENSE` for details.
