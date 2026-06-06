@@ -1,0 +1,12 @@
+llm.env.local
+*.env.local
+build/
+dist/
+runtime.log
+Screenshots/
+assets/mitsuba-*/
+*.user
+*.suo
+*.vcxproj.user
+*.pdb
+*.ilk
