@@ -13,6 +13,14 @@ The current product direction is a small artist-facing tool rather than a genera
 - HaoRig AI skeleton mapping and animation retarget preview
 - Batch retarget quality testing for downloaded FBX/VRMA motion sets
 
+## Demo Screenshots
+
+![LookDev main preview](docs/demo/lookdev-main.png)
+
+![OpenGL ray trace preview](docs/demo/raytrace-preview.png)
+
+![Retarget animation preview](docs/demo/retarget-preview.png)
+
 ## Build
 
 The project is configured with CMake and Qt 5.

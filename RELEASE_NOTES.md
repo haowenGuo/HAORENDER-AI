@@ -1,5 +1,21 @@
 # Release Notes
 
+## HAORENDER-AI 2026-06-08 Demo Release
+
+This release refreshes the Windows preview package and adds demo screenshots for the GitHub repository and release page.
+
+### Highlights
+
+- Rebuilt the portable Windows package as `HAORENDER-AI-20260608-win64.zip`.
+- Added repository demo screenshots for LookDev, OpenGL ray trace preview, and retarget animation preview.
+- Kept the project under the MIT License.
+
+### Validation
+
+- `HaoRender-GI` Release build: passed.
+- `HaoRigBatchTest` Release build: passed.
+- Package script completed successfully.
+
 ## HAORENDER-AI 2026-06-06 Preview Release
 
 This release packages the current HAORENDER-AI preview as a Windows Qt desktop application. The executable target is still named `HaoRender-GI.exe` for this preview.
