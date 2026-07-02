@@ -1,0 +1,77 @@
+﻿{
+  "version": 1,
+  "name": "Genshin-like Soft Game Anime v1",
+  "description": "A hand-designed HaoRender-GI baseline for soft game-anime character rendering: blue-violet soft shadows, small cream highlights, light cool rim, and modest dark-gray outline. It deliberately avoids the ugly stack of high rim + high outline + high specular + high ambient.",
+  "sourcePrompt": "人工设计：仿原神/二游柔和角色渲染，不要硬赛璐璐，不要手办塑料感。",
+  "focus": "Toon",
+  "preferredPipeline": "Raster",
+  "lookDev": {
+    "shadingModel": "Phong",
+    "exposure": 1.10,
+    "normalStrength": 0.88,
+    "enableShadows": true,
+    "enableBackfaceCulling": true,
+    "pbr": {
+      "iblEnabled": true,
+      "iblDiffuseStrength": 0.55,
+      "iblSpecularStrength": 0.80,
+      "skyLightStrength": 0.20,
+      "metallicChannel": 2,
+      "roughnessChannel": 1,
+      "aoChannel": 0,
+      "emissiveChannel": 0
+    },
+    "phong": {
+      "hardSpecular": false,
+      "useTonemap": true,
+      "primaryLightOnly": false,
+      "secondaryLightScale": 0.30,
+      "diffuseStrength": 1.06,
+      "ambientStrength": 0.075,
+      "ambientColor": { "r": 1.0, "g": 1.0, "b": 1.0 },
+      "specularStrength": 0.32,
+      "specularTint": { "r": 1.0, "g": 0.965, "b": 0.91 },
+      "smoothness": 0.76,
+      "specularMapWeight": 0.62,
+      "shininess": 54.0,
+      "rimStrength": 0.30,
+      "rimPower": 2.15,
+      "rimTint": { "r": 0.84, "g": 0.91, "b": 1.0 },
+      "toon": {
+        "enabled": true,
+        "diffuseSteps": 3.0,
+        "diffuseSoftness": 0.105,
+        "shadowThreshold": 0.445,
+        "shadowSoftness": 0.135,
+        "shadowTint": { "r": 0.62, "g": 0.68, "b": 0.91 },
+        "highlightThreshold": 0.385,
+        "highlightSoftness": 0.085,
+        "highlightStrength": 0.58,
+        "highlightTint": { "r": 1.0, "g": 0.965, "b": 0.92 },
+        "rimThreshold": 0.315,
+        "rimSoftness": 0.105
+      },
+      "outline": {
+        "enabled": true,
+        "widthPixels": 1.35,
+        "opacity": 0.56,
+        "depthBias": 0.0015,
+        "color": { "r": 0.055, "g": 0.062, "b": 0.095 }
+      }
+    },
+    "rayTrace": {
+      "sceneMode": "LoadedModel",
+      "viewMode": "Lit",
+      "integrator": "PathTraceNee",
+      "ambientStrength": 0.05,
+      "shadowStrength": 1.0,
+      "maxBounces": 20,
+      "maxNeeBounces": 2,
+      "samplesPerFrame": 8,
+      "enableNee": true,
+      "enablePhotonCache": true,
+      "photonRadius": 0.22,
+      "photonIntensity": 1.0
+    }
+  }
+}
